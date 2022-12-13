@@ -2,7 +2,7 @@ name:  Test Project
 on: push
 jobs: 
   test:
-   runs-on: macos-12
+    runs-on: macos-12
     steps:
      - name: Get code #It will get a code from repository to run on server/runner
        uses: actions/checkout@v3 #When you want to use action
