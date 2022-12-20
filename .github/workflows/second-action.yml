@@ -1,16 +1,17 @@
 name:  Test Project
 on: push
 jobs: 
-  test:
-    runs-on: macos-12
-    steps:
-     - name: Get code #It will get a code from repository to run on server/runner
-       uses: actions/checkout@v3 #When you want to use action
-     - name: Install NodsJS
-       uses: actions/setup-node@v3
-       with:
+second-demo-job:
+     runs-on: macos-12
+     steps: 
+       - name: Get code #It will get a code from repository to run on server/runner
+         uses: actions/checkout@v3 #When you want to use action
+       - name: Install NodsJS
+         uses: actions/setup-node@v3
+         with:
            node-version: 18
-      - name: Install dependencies
-        run: npm ci
-      - name: Run Tests
-        run: npm test
+       - name: Install dependencies
+         run: npm ci
+       - name: Run Tests
+         run: npm test
+
