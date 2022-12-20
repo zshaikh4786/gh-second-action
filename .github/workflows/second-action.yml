@@ -1,5 +1,5 @@
 name:  Test Project
-on: [push, workflow_dispatch]
+on: [push, workflow_dispatch] # Using Multiple Triggers
 jobs: 
   test:
      runs-on: macos-12
