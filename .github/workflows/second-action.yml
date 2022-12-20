@@ -1,7 +1,7 @@
 name:  Test Project
 on: push
 jobs: 
-second-demo-job:
+  second-demo-job:
      runs-on: macos-12
      steps: 
        - name: Get code #It will get a code from repository to run on server/runner
